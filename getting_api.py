@@ -1,6 +1,5 @@
 import requests
 
-
 # Get raw_data from API
 
 def get_data():
@@ -18,6 +17,3 @@ def get_data():
 
   raw_data = requests.get(url, headers={"Authorization": "Bearer " + api_key.json()['access_token']})
   return raw_data.json()
-
-
-
