@@ -14,10 +14,6 @@ def split_date(value):
     time = value.split('.')[0]
     return datetime.strptime(time, '%Y-%m-%dT%H:%M:%S').strftime('%d-%B-%Y')
 
-@app.template_filter('split_time')
-def split_time(value):
-    return value.split('T')[1].split('.')[0]
-
 if __name__ == "__main__":
     app.run(debug=True)
 
