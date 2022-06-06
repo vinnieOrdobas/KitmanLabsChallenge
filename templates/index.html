@@ -18,7 +18,13 @@
           </header>
           
           <div class="w3-container">
-            <p>Test: {{ athlete['test'] }}</p>
+            <p>Test: {{ athlete['test']}}</p>
+            <hr>
+            <p>Average: {{ athlete['average'] }}</p>
+            <p>Max Value: {{ athlete['max_value'] }}</p>
+            <p>Min Value: {{ athlete['min_value'] }}</p>
+            <p>Count {{ athlete['count'] }}</p>
+            <p>Sum: {{ athlete['sum'] }}</p>
             <hr>
           </div>
 
@@ -44,6 +50,7 @@
           </div>
       </div>
       {% endfor %}
+      {{ data }}
   </div>
   <script>
     function myFunction(id) {
